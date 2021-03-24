@@ -8,6 +8,20 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Castor.Cache\Castor.Cache.csproj" />
+    <ProjectReference Include="..\Castor.Common\Castor.Common.csproj" />
+    <ProjectReference Include="..\Castor.Configuration\Castor.Configuration.csproj" />
+    <ProjectReference Include="..\Castor.Core\Castor.Core.csproj" />
+    <ProjectReference Include="..\Castor.Data\Castor.Data.csproj" />
+    <ProjectReference Include="..\Castor.Email\Castor.Email.csproj" />
+    <ProjectReference Include="..\Castor.Interfaces\Castor.Interfaces.csproj" />
+    <ProjectReference Include="..\Castor.Log\Castor.Log.csproj" />
+    <ProjectReference Include="..\Castor.Session\Castor.Session.csproj" />
+    <ProjectReference Include="..\Castor.WebContext\Castor.WebContext.csproj" />
   </ItemGroup>
 
 

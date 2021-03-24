@@ -3,21 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castor.API", "Castor.API\Castor.API.csproj", "{1431369C-4F55-4A67-A8C4-2B5C03E94914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castor.API", "Castor.API\Castor.API.csproj", "{1431369C-4F55-4A67-A8C4-2B5C03E94914}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Castor.Client", "Castor.Client\Castor.Client.njsproj", "{69188BEC-250B-43A0-8CB9-CDCC5D8DA3ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castor.Common", "Castor.Common\Castor.Common.csproj", "{7E486C03-2409-4BE8-BC7F-46D2F884451E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castor.Common", "Castor.Common\Castor.Common.csproj", "{7E486C03-2409-4BE8-BC7F-46D2F884451E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castor.Configuration", "Castor.Configuration\Castor.Configuration.csproj", "{B8604144-6EBE-4B95-A2E3-242F8A5F5DC2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B2200F75-C228-4453-A661-AAFA0BAEA4C2} = {B2200F75-C228-4453-A661-AAFA0BAEA4C2}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castor.Configuration", "Castor.Configuration\Castor.Configuration.csproj", "{B8604144-6EBE-4B95-A2E3-242F8A5F5DC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castor.Core", "Castor.Core\Castor.Core.csproj", "{6DA538B8-91C6-4AA3-B7B8-12BF295B3933}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castor.Core", "Castor.Core\Castor.Core.csproj", "{6DA538B8-91C6-4AA3-B7B8-12BF295B3933}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castor.Data", "Castor.Data\Castor.Data.csproj", "{35B3ACC0-1689-4AB4-91BA-A6CFF22D95B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castor.Data", "Castor.Data\Castor.Data.csproj", "{35B3ACC0-1689-4AB4-91BA-A6CFF22D95B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castor.Interfaces", "Castor.Interfaces\Castor.Interfaces.csproj", "{B2200F75-C228-4453-A661-AAFA0BAEA4C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castor.Interfaces", "Castor.Interfaces\Castor.Interfaces.csproj", "{B2200F75-C228-4453-A661-AAFA0BAEA4C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castor.Session", "Castor.Session\Castor.Session.csproj", "{92E8E032-F248-42F9-B43A-4E38A4239558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castor.Session", "Castor.Session\Castor.Session.csproj", "{92E8E032-F248-42F9-B43A-4E38A4239558}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castor.Cache", "Castor.Cache\Castor.Cache.csproj", "{61D1ABF1-F3E9-43F4-9BEE-6DABC309DE08}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B2200F75-C228-4453-A661-AAFA0BAEA4C2} = {B2200F75-C228-4453-A661-AAFA0BAEA4C2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castor.Email", "Castor.Email\Castor.Email.csproj", "{A91330EB-F7B8-418A-9263-B361178156DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castor.Log", "Castor.Log\Castor.Log.csproj", "{CEA12EDA-FCA1-4C6C-B5DE-A9E2DE4BB70A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castor.WebContext", "Castor.WebContext\Castor.WebContext.csproj", "{756B8ECD-9E2D-4919-BA4C-6B204D5A63C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +41,6 @@ Global
 		{1431369C-4F55-4A67-A8C4-2B5C03E94914}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1431369C-4F55-4A67-A8C4-2B5C03E94914}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1431369C-4F55-4A67-A8C4-2B5C03E94914}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69188BEC-250B-43A0-8CB9-CDCC5D8DA3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69188BEC-250B-43A0-8CB9-CDCC5D8DA3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69188BEC-250B-43A0-8CB9-CDCC5D8DA3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69188BEC-250B-43A0-8CB9-CDCC5D8DA3ED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E486C03-2409-4BE8-BC7F-46D2F884451E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7E486C03-2409-4BE8-BC7F-46D2F884451E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E486C03-2409-4BE8-BC7F-46D2F884451E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +65,22 @@ Global
 		{92E8E032-F248-42F9-B43A-4E38A4239558}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92E8E032-F248-42F9-B43A-4E38A4239558}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92E8E032-F248-42F9-B43A-4E38A4239558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D1ABF1-F3E9-43F4-9BEE-6DABC309DE08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D1ABF1-F3E9-43F4-9BEE-6DABC309DE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D1ABF1-F3E9-43F4-9BEE-6DABC309DE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D1ABF1-F3E9-43F4-9BEE-6DABC309DE08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A91330EB-F7B8-418A-9263-B361178156DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91330EB-F7B8-418A-9263-B361178156DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91330EB-F7B8-418A-9263-B361178156DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91330EB-F7B8-418A-9263-B361178156DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA12EDA-FCA1-4C6C-B5DE-A9E2DE4BB70A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA12EDA-FCA1-4C6C-B5DE-A9E2DE4BB70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA12EDA-FCA1-4C6C-B5DE-A9E2DE4BB70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA12EDA-FCA1-4C6C-B5DE-A9E2DE4BB70A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{756B8ECD-9E2D-4919-BA4C-6B204D5A63C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{756B8ECD-9E2D-4919-BA4C-6B204D5A63C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{756B8ECD-9E2D-4919-BA4C-6B204D5A63C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{756B8ECD-9E2D-4919-BA4C-6B204D5A63C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
