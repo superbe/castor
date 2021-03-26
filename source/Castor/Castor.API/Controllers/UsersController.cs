@@ -12,21 +12,18 @@ namespace Castor.API.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class UsersController : ControllerBase
+	public class UsersController : BaseController
 	{
-		private readonly IDataContext _context;
-		public UsersController(IDataContext context)
+		public UsersController(DataContext context): base(context)
 		{
-			_context = context;
+
 		}
 
 		// GET: api/<UsersController>
 		[HttpGet]
 		public IEnumerable<IUser> Get()
 		{
-			IUser[] users = _context.Users.ToArray();
-
-			return users;
+			return _business_controller.GetUsers();
 		}
 
 		// GET api/<UsersController>/5

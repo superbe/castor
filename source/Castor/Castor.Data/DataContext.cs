@@ -7,17 +7,17 @@ using System.Text;
 
 namespace Castor.Data
 {
-	public class DataContext: DbContext, IDataContext
+	public class DataContext: DbContext
 	{
 		public DataContext(DbContextOptions<DataContext> options) : base(options)
 		{
 		}
 
-		public DbSet<IUser> Users { get; set; }
+		public DbSet<User> Users { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			modelBuilder.Entity<IUser>().ToTable("User");
+			modelBuilder.Entity<User>().ToTable("User");
 		}
 	}
 }

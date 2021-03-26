@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Castor.Data\Castor.Data.csproj" />
+    <ProjectReference Include="..\Castor.Interfaces\Castor.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>

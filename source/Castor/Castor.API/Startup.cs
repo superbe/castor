@@ -35,10 +35,6 @@ namespace Castor.API
 					)
 				);
 
-			services.AddScoped<IDataContext, DataContext>();
-
-			//services.AddDatabaseDeveloperPageExceptionFilter();
-
 			services.AddControllers();
 			services.AddMemoryCache();
 		}
